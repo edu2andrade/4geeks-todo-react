@@ -30,10 +30,10 @@ const Home = () => {
 				<h1>todos</h1>
 				<Form todoList={todoList} handleAddTodo={handleAddTodo} />
 				<div className="todosContainer">
-					{todoList.map((todo, index) => {
+					{todoList.map((todo) => {
 						return (
 							<Todo 
-								key={index} 
+								key={todo.id} 
 								todo={todo}
 								handleRemoveTodo={handleRemoveTodo}
 							/>
